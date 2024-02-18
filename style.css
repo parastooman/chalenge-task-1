@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+:root {
+  --color-number-upload: #234894;
+  --color-box-number: #afcedd;
+  --color-button: #219f95;
+  --color-whit: #ffffff;
+  --color-body: #1e1e1e;
+  --color-coment: #696969;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: var(--color-body);
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+header {
+  padding: 1rem;
+}
+h1 {
+  color: var(--color-body);
+  font-size: 2.5rem;
+}
+h2 {
+  color: var(--color-body);
+  font-size: 2.2rem;
+}
+.frame {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2rem;
+  gap: 1rem;
+}
+.darkhast {
+  grid-column: 1/3;
+}
+@media screen and (min-width: 740px) {
+  .frame {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .frame {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.frame-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 3rem;
+}
+.box {
+  border: 1px solid var(--color-box-number);
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  margin: 0 0 0 0.5rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  background-color: var(--color-box-number);
+  color: var(--color-number-upload);
+  text-align: center;
+}
+.uplod {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 1.5rem;
+}
+
+button {
+  background-color: var(--color-button);
+  border-radius: 10px;
+  border: 0;
+  color: var(--color-whit);
+  font-size: 1.6rem;
+  height: 64px;
+  width: 150px;
+}
+.btn {
+  justify-self: end;
+}
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  align-self: center;
+}
+
+.information {
+  display: flex;
+  align-items: start;
+  gap: 0 0.5rem;
+}
+.information-name {
+  align-self: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--color-body);
+}
+
+.uplod-item {
+  color: var(--color-number-upload);
+  align-self: center;
+  font-weight: 700;
+}
+.darkhast-title {
+    font-weight: bold;
+  font-size: 1.8rem;
+  color: var(--color-body);
+}
+.darkhast-shenase {
+  font-size: 1rem;
+  color: var(--color-coment);
+}
+.tarikh {
+  justify-self: end;
+  font-size: 1rem;
+  color: var(--color-coment);
+}
